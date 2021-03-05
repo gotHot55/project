@@ -1,0 +1,23 @@
+server:
+  port: 8801
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://root:123456@localhost:8001/eureka/
+zuul:
+  routes:
+    eureka-client:
+      path: /eurekaClient/**
+    openfeign-server:
+      path: /openfeignServer/**
+  prefix: /add
+spring:
+  application:
+    name: zuul-proxy
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'routes'

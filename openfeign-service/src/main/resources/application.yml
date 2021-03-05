@@ -1,0 +1,25 @@
+server:
+  port: 8501
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://root:123456@localhost:8001/eureka/
+#    register-with-eureka: true
+#    fetch-registry: true
+spring:
+  application:
+    name: openfeign-server
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 0.1
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#service-url:
+#  user-service: http://nacos-client
+feign:
+  hystrix:
+    enabled: true

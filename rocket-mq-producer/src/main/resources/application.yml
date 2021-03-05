@@ -1,0 +1,19 @@
+server:
+  port: 8181
+spring:
+  application:
+    name: rocketMq-producer
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bank1?useUnicode=true
+    username: root
+    password: 123
+rocketmq:
+  producer:
+    group: producer_bank1
+  name-server: localhost:9876
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    com.lcl.springcloud: debug

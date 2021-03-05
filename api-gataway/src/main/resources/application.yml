@@ -1,0 +1,33 @@
+server:
+  port: 9501
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user_route
+          uri: lb://eureka-client
+          predicates:
+            - Method=GET
+          fileters:
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+        - id: openfeign-route
+          uri: LB://OPENFEIGN-SERVER
+          fileters:
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+          predicates:
+            - Method=GET
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://root:123456@localhost:8001/eureka/

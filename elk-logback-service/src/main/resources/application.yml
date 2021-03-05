@@ -1,0 +1,7 @@
+server:
+  port: 8811
+logging:
+  level:
+    com.lcl.springcloud: debug
+    org.springframework.web: debug
+    org.springframework.boot: debug

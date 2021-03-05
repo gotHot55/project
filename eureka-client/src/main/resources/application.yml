@@ -1,0 +1,50 @@
+server:
+  port: 8101
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bank1?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123
+#  zipkin:
+#    base-url: http://localhost:9411
+#  sleuth:
+#    sampler:
+#      probability: 0.1
+#  application:
+#    name: nacos-user-service
+#  #    name: eureka-client
+#  boot:
+#    admin:
+#      client:
+#        instance:
+#          service-url: http://localhost:9999
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#  endpoint:
+#    health:
+#      show-details: always
+#logging:
+#  file:
+#    name: nacos-client.log
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.application.name}${spring.cloud.client.ip-address}:${server.port}
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
+  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+    service-url:
+      defaultZone: http://root:123456@localhost:8001/eureka/ #eureka客户端注册到有登录认证的服务端 http://${name}:${pwd}@${localhost}:${port}/eureka/
+#      defaultZone: http://localhost:8001/eureka/
+#      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/

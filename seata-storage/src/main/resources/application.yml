@@ -1,0 +1,26 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: seata-storage-service
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/seata_storage?allowMultiQueries=true&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 123
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    alibaba:
+      seata:
+        tx-service-group: my_lcl_tx_group
+logging:
+  level:
+    com.lcl.springcloud: debug
+    io:
+      seata: debug
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

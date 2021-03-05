@@ -1,0 +1,12 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: admin-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:8001/eureka/
+logging:
+  file:
+    name: admin-server.log

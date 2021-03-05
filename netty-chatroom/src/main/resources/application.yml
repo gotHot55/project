@@ -1,0 +1,11 @@
+server:
+  port: 8005
+netty:
+  host: 127.0.0.1
+  port: 9090
+spring:
+  mvc:
+    view:
+      prefix: classpath:templates/
+      suffix: .html
+    static-path-pattern: /static/**

@@ -1,0 +1,19 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: ribbon-client
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/crown?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+#    username: root
+#    password: 123456
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://root:123456@localhost:8001/eureka/
+service-url:
+  user-service: http://eureka-client8101

@@ -1,0 +1,130 @@
+2020-10-30 17:08:50.279  INFO 10632 --- [restartedMain] c.l.springcloud.AdminServerApplication   : No active profile set, falling back to default profiles: default
+2020-10-30 17:08:51.400  WARN 10632 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-30 17:08:51.551  INFO 10632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8875c94b-825e-3c2b-8886-e347fa8127b5
+2020-10-30 17:08:51.657  INFO 10632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-30 17:08:51.660  INFO 10632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-30 17:08:51.661  INFO 10632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-30 17:08:52.180  INFO 10632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-10-30 17:08:52.201  INFO 10632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-30 17:08:52.203  INFO 10632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-30 17:08:52.422  INFO 10632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-30 17:08:52.422  INFO 10632 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2124 ms
+2020-10-30 17:08:52.532  WARN 10632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 17:08:52.532  INFO 10632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 17:08:52.547  INFO 10632 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@41dd238f
+2020-10-30 17:08:52.902  WARN 10632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 17:08:52.903  INFO 10632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 17:08:53.100  INFO 10632 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-30 17:08:53.245  WARN 10632 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-10-30 17:08:56.985  INFO 10632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-30 17:08:57.731  INFO 10632 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2020-10-30 17:08:58.538  WARN 10632 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-10-30 17:08:58.560  WARN 10632 --- [restartedMain] eactorLoadBalancerClientRibbonWarnLogger : You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-10-30 17:08:58.598  INFO 10632 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-10-30 17:08:58.695  INFO 10632 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-30 17:08:58.736  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-30 17:08:59.564  INFO 10632 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-30 17:08:59.564  INFO 10632 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-30 17:08:59.701  INFO 10632 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-30 17:08:59.702  INFO 10632 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-30 17:08:59.927  INFO 10632 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:09:00.420  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-30 17:09:00.420  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-30 17:09:00.420  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-30 17:09:00.420  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-30 17:09:00.420  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-30 17:09:00.421  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-30 17:09:00.421  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-30 17:09:00.720  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-30 17:09:00.724  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-30 17:09:00.726  INFO 10632 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-30 17:09:00.730  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1604048940729 with initial instances count: 2
+2020-10-30 17:09:00.731  INFO 10632 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVER with eureka with status UP
+2020-10-30 17:09:00.732  INFO 10632 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1604048940732, current=UP, previous=STARTING]
+2020-10-30 17:09:00.735  INFO 10632 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/LB-202007211142:admin-server:9999: registering service...
+2020-10-30 17:09:00.775  INFO 10632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-10-30 17:09:00.777  INFO 10632 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9999
+2020-10-30 17:09:00.781  INFO 10632 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/LB-202007211142:admin-server:9999 - registration status: 204
+2020-10-30 17:09:02.217  INFO 10632 --- [restartedMain] c.l.springcloud.AdminServerApplication   : Started AdminServerApplication in 14.745 seconds (JVM running for 16.289)
+2020-10-30 17:09:02.542  INFO 10632 --- [RMI TCP Connection(3)-172.18.60.17] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-30 17:09:02.543  INFO 10632 --- [RMI TCP Connection(3)-172.18.60.17] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-30 17:09:02.553  INFO 10632 --- [RMI TCP Connection(3)-172.18.60.17] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-10-30 17:14:00.423  INFO 10632 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:14:05.683  INFO 10632 --- [reactor-http-nio-2] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=3fa8f32dbf91, version=2, registration=Registration(name=eureka-client, managementUrl=http://LB-202007211142.mshome.net:8101/actuator, healthUrl=http://LB-202007211142.mshome.net:8101/actuator/health, serviceUrl=http://LB-202007211142.mshome.net:8101/, source=http-api), registered=true, statusInfo=StatusInfo(status=UP, details={hystrix={status=UP}, diskSpace={status=UP, details={total=107373129728, free=42048606208, threshold=10485760, exists=true}}, ping={status=UP}, discoveryComposite={status=UP, details={discoveryClient={status=UP, details={services=[eureka-client, admin-server]}}, eureka={description=Remote status from Eureka server, status=UP, details={applications={EUREKA-CLIENT=1, ADMIN-SERVER=1}}}}}, refreshScope={status=UP}, db={status=UP, details={database=MySQL, validationQuery=isValid()}}}), statusTimestamp=2020-10-30T09:09:09.434Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://LB-202007211142.mshome.net:8101/actuator/caches), loggers=Endpoint(id=loggers, url=http://LB-202007211142.mshome.net:8101/actuator/loggers), logfile=Endpoint(id=logfile, url=http://LB-202007211142.mshome.net:8101/actuator/logfile), health=Endpoint(id=health, url=http://LB-202007211142.mshome.net:8101/actuator/health), refresh=Endpoint(id=refresh, url=http://LB-202007211142.mshome.net:8101/actuator/refresh), env=Endpoint(id=env, url=http://LB-202007211142.mshome.net:8101/actuator/env), heapdump=Endpoint(id=heapdump, url=http://LB-202007211142.mshome.net:8101/actuator/heapdump), features=Endpoint(id=features, url=http://LB-202007211142.mshome.net:8101/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://LB-202007211142.mshome.net:8101/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://LB-202007211142.mshome.net:8101/actuator/mappings), archaius=Endpoint(id=archaius, url=http://LB-202007211142.mshome.net:8101/actuator/archaius), beans=Endpoint(id=beans, url=http://LB-202007211142.mshome.net:8101/actuator/beans), configprops=Endpoint(id=configprops, url=http://LB-202007211142.mshome.net:8101/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://LB-202007211142.mshome.net:8101/actuator/threaddump), metrics=Endpoint(id=metrics, url=http://LB-202007211142.mshome.net:8101/actuator/metrics), conditions=Endpoint(id=conditions, url=http://LB-202007211142.mshome.net:8101/actuator/conditions), service-registry=Endpoint(id=service-registry, url=http://LB-202007211142.mshome.net:8101/actuator/service-registry), info=Endpoint(id=info, url=http://LB-202007211142.mshome.net:8101/actuator/info), jolokia=Endpoint(id=jolokia, url=http://LB-202007211142.mshome.net:8101/actuator/jolokia)}), buildVersion=null, tags=Tags(values={}))
+
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: LB-202007211142.mshome.net/172.18.60.17:8101
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Request to GET health [DefaultWebClient]
+Stack trace:
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_172]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_172]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.52.Final.jar:4.1.52.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_172]
+
+2020-10-30 17:14:38.782  INFO 13188 --- [restartedMain] c.l.springcloud.AdminServerApplication   : No active profile set, falling back to default profiles: default
+2020-10-30 17:14:39.911  WARN 13188 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-30 17:14:40.051  INFO 13188 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8875c94b-825e-3c2b-8886-e347fa8127b5
+2020-10-30 17:14:40.157  INFO 13188 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-30 17:14:40.159  INFO 13188 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-30 17:14:40.161  INFO 13188 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-30 17:14:40.661  INFO 13188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-10-30 17:14:40.672  INFO 13188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-30 17:14:40.673  INFO 13188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-30 17:14:40.834  INFO 13188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-30 17:14:40.834  INFO 13188 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2024 ms
+2020-10-30 17:14:40.945  WARN 13188 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 17:14:40.945  INFO 13188 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 17:14:40.959  INFO 13188 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3cd5eda4
+2020-10-30 17:14:41.115  WARN 13188 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 17:14:41.116  INFO 13188 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 17:14:41.463  INFO 13188 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-30 17:14:41.705  WARN 13188 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-10-30 17:14:44.710  INFO 13188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-30 17:14:45.445  INFO 13188 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2020-10-30 17:14:46.228  WARN 13188 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-10-30 17:14:46.245  WARN 13188 --- [restartedMain] eactorLoadBalancerClientRibbonWarnLogger : You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-10-30 17:14:46.281  INFO 13188 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-10-30 17:14:46.374  INFO 13188 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-30 17:14:46.412  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-30 17:14:47.085  INFO 13188 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-30 17:14:47.086  INFO 13188 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-30 17:14:47.217  INFO 13188 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-30 17:14:47.218  INFO 13188 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-30 17:14:47.409  INFO 13188 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:14:48.060  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-30 17:14:48.060  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-30 17:14:48.060  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-30 17:14:48.060  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-30 17:14:48.060  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-30 17:14:48.061  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-30 17:14:48.061  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-30 17:14:48.404  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-30 17:14:48.407  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-30 17:14:48.410  INFO 13188 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-30 17:14:48.414  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1604049288413 with initial instances count: 2
+2020-10-30 17:14:48.415  INFO 13188 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVER with eureka with status UP
+2020-10-30 17:14:48.416  INFO 13188 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1604049288416, current=UP, previous=STARTING]
+2020-10-30 17:14:48.419  INFO 13188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/LB-202007211142:admin-server:9999: registering service...
+2020-10-30 17:14:48.457  INFO 13188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-10-30 17:14:48.458  INFO 13188 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9999
+2020-10-30 17:14:48.465  INFO 13188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/LB-202007211142:admin-server:9999 - registration status: 204
+2020-10-30 17:14:49.194  INFO 13188 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-30 17:14:49.194  INFO 13188 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-30 17:14:49.206  INFO 13188 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-10-30 17:14:49.969  INFO 13188 --- [restartedMain] c.l.springcloud.AdminServerApplication   : Started AdminServerApplication in 14.197 seconds (JVM running for 15.777)
+2020-10-30 17:19:48.069  INFO 13188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:24:48.071  INFO 13188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:29:48.075  INFO 13188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:34:48.077  INFO 13188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:39:48.081  INFO 13188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:44:48.084  INFO 13188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -1,0 +1,178 @@
+2020-10-30 16:40:42.413  INFO [eureka-client,,,] 19028 --- [main] c.l.springcloud.EurekaClientApplication  : The following profiles are active: replica1
+2020-10-30 16:40:43.834  WARN [eureka-client,,,] 19028 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-30 16:40:44.179  INFO [eureka-client,,,] 19028 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38f21d9f-e0fa-34e2-80d7-939b78a5b01b
+2020-10-30 16:40:46.198  INFO [eureka-client,,,] 19028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8101 (http)
+2020-10-30 16:40:46.255  INFO [eureka-client,,,] 19028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-30 16:40:46.287  INFO [eureka-client,,,] 19028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-30 16:40:46.999  INFO [eureka-client,,,] 19028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-30 16:40:47.000  INFO [eureka-client,,,] 19028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4563 ms
+2020-10-30 16:40:47.407  WARN [eureka-client,,,] 19028 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 16:40:47.408  INFO [eureka-client,,,] 19028 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 16:40:47.443  INFO [eureka-client,,,] 19028 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6588b715
+2020-10-30 16:40:49.213  WARN [eureka-client,,,] 19028 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-10-30 16:40:49.451  INFO [eureka-client,,,] 19028 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-30 16:40:49.620  INFO [eureka-client,,,] 19028 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-30 16:40:51.039  INFO [eureka-client,,,] 19028 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-10-30 16:40:51.658  WARN [eureka-client,,,] 19028 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 16:40:51.658  INFO [eureka-client,,,] 19028 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 16:40:52.053  INFO [eureka-client,,,] 19028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-30 16:40:53.510  INFO [eureka-client,,,] 19028 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-10-30 16:40:55.049  INFO [eureka-client,,,] 19028 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2020-10-30 16:40:55.098  WARN [eureka-client,,,] 19028 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-10-30 16:40:56.033  INFO [eureka-client,,,] 19028 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-10-30 16:40:56.152  INFO [eureka-client,,,] 19028 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-30 16:40:56.190  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-30 16:40:56.252  INFO [eureka-client,,,] 19028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-30 16:40:56.252  INFO [eureka-client,,,] 19028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-30 16:40:56.383  INFO [eureka-client,,,] 19028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-30 16:40:56.383  INFO [eureka-client,,,] 19028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-30 16:40:56.576  INFO [eureka-client,,,] 19028 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 16:40:57.057  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-30 16:40:57.057  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-30 16:40:57.057  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-30 16:40:57.057  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-30 16:40:57.057  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-30 16:40:57.057  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-30 16:40:57.057  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-30 16:40:57.666  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-30 16:40:57.669  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-30 16:40:57.672  INFO [eureka-client,,,] 19028 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-30 16:40:57.677  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1604047257676 with initial instances count: 1
+2020-10-30 16:40:57.686  INFO [eureka-client,,,] 19028 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-CLIENT with eureka with status UP
+2020-10-30 16:40:57.687  INFO [eureka-client,,,] 19028 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1604047257687, current=UP, previous=STARTING]
+2020-10-30 16:40:57.689  INFO [eureka-client,,,] 19028 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT/LB-202007211142:eureka-client:8101: registering service...
+2020-10-30 16:40:57.725  INFO [eureka-client,,,] 19028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8101 (http) with context path ''
+2020-10-30 16:40:57.726  INFO [eureka-client,,,] 19028 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8101
+2020-10-30 16:40:57.732  INFO [eureka-client,,,] 19028 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT/LB-202007211142:eureka-client:8101 - registration status: 204
+2020-10-30 16:40:58.472  INFO [eureka-client,,,] 19028 --- [main] c.l.springcloud.EurekaClientApplication  : Started EurekaClientApplication in 18.667 seconds (JVM running for 19.994)
+2020-10-30 16:40:59.701  INFO [eureka-client,,,] 19028 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 3fa8f32dbf91
+2020-10-30 16:40:59.840  INFO [eureka-client,,,] 19028 --- [RMI TCP Connection(4)-172.18.60.17] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-30 16:40:59.841  INFO [eureka-client,,,] 19028 --- [RMI TCP Connection(4)-172.18.60.17] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-30 16:40:59.865  INFO [eureka-client,,,] 19028 --- [RMI TCP Connection(4)-172.18.60.17] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2020-10-30 16:45:05.984  WARN [eureka-client,babe7d5e8ae841f9,babe7d5e8ae841f9,false] 19028 --- [http-nio-8101-exec-9] o.s.c.sleuth.log.SleuthSlf4jProperties   : The [spring.sleuth.log.slf4j.enabled] property is deprecated and is removed in the next major release version of Sleuth. Please use [spring.sleuth.baggage.correlation-enabled]
+2020-10-30 16:45:05.985  WARN [eureka-client,babe7d5e8ae841f9,babe7d5e8ae841f9,false] 19028 --- [http-nio-8101-exec-9] o.s.c.sleuth.log.SleuthSlf4jProperties   : The [spring.sleuth.log.slf4j.enabled] property is deprecated and is removed in the next major release version of Sleuth. Please use [spring.sleuth.baggage.correlation-enabled]
+2020-10-30 16:45:57.061  INFO [eureka-client,,,] 19028 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 16:47:23.602  WARN [eureka-client,b20b1fbc3aefbbec,b20b1fbc3aefbbec,false] 19028 --- [http-nio-8101-exec-10] o.s.c.sleuth.log.SleuthSlf4jProperties   : The [spring.sleuth.log.slf4j.enabled] property is deprecated and is removed in the next major release version of Sleuth. Please use [spring.sleuth.baggage.correlation-enabled]
+2020-10-30 16:47:23.602  WARN [eureka-client,b20b1fbc3aefbbec,b20b1fbc3aefbbec,false] 19028 --- [http-nio-8101-exec-10] o.s.c.sleuth.log.SleuthSlf4jProperties   : The [spring.sleuth.log.slf4j.enabled] property is deprecated and is removed in the next major release version of Sleuth. Please use [spring.sleuth.baggage.correlation-enabled]
+2020-10-30 16:48:58.008  WARN [eureka-client,a91dd08dedc4609c,a91dd08dedc4609c,false] 19028 --- [http-nio-8101-exec-3] o.s.c.sleuth.log.SleuthSlf4jProperties   : The [spring.sleuth.log.slf4j.enabled] property is deprecated and is removed in the next major release version of Sleuth. Please use [spring.sleuth.baggage.correlation-enabled]
+2020-10-30 16:48:58.009  WARN [eureka-client,a91dd08dedc4609c,a91dd08dedc4609c,false] 19028 --- [http-nio-8101-exec-3] o.s.c.sleuth.log.SleuthSlf4jProperties   : The [spring.sleuth.log.slf4j.enabled] property is deprecated and is removed in the next major release version of Sleuth. Please use [spring.sleuth.baggage.correlation-enabled]
+2020-10-30 16:49:30.499  INFO [eureka-client,,,] 19028 --- [http-nio-8101-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia-actuator-endpoint: No access restrictor found, access to any MBean is allowed
+2020-10-30 16:50:57.064  INFO [eureka-client,,,] 19028 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 16:55:57.066  INFO [eureka-client,,,] 19028 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 16:56:20.503  WARN [eureka-client,,,] 19028 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=eureka-client, managementUrl=http://LB-202007211142.mshome.net:8101/actuator, healthUrl=http://LB-202007211142.mshome.net:8101/actuator/health, serviceUrl=http://LB-202007211142.mshome.net:8101/) at spring-boot-admin ([http://localhost:9999/instances]): I/O error on POST request for "http://localhost:9999/instances": Connect to localhost:9999 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:9999 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect. Further attempts are logged on DEBUG level
+2020-10-30 16:57:46.081  INFO [eureka-client,,,] 3960 --- [main] c.l.springcloud.EurekaClientApplication  : The following profiles are active: replica1
+2020-10-30 16:57:47.258  WARN [eureka-client,,,] 3960 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-30 16:57:47.524  INFO [eureka-client,,,] 3960 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38f21d9f-e0fa-34e2-80d7-939b78a5b01b
+2020-10-30 16:57:48.314  INFO [eureka-client,,,] 3960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8101 (http)
+2020-10-30 16:57:48.326  INFO [eureka-client,,,] 3960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-30 16:57:48.326  INFO [eureka-client,,,] 3960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-30 16:57:48.474  INFO [eureka-client,,,] 3960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-30 16:57:48.475  INFO [eureka-client,,,] 3960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2369 ms
+2020-10-30 16:57:48.628  WARN [eureka-client,,,] 3960 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 16:57:48.628  INFO [eureka-client,,,] 3960 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 16:57:48.640  INFO [eureka-client,,,] 3960 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6588b715
+2020-10-30 16:57:49.740  WARN [eureka-client,,,] 3960 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-10-30 16:57:49.947  INFO [eureka-client,,,] 3960 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-30 16:57:50.084  INFO [eureka-client,,,] 3960 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-30 16:57:51.274  INFO [eureka-client,,,] 3960 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-10-30 16:57:51.774  WARN [eureka-client,,,] 3960 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 16:57:51.775  INFO [eureka-client,,,] 3960 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 16:57:52.048  INFO [eureka-client,,,] 3960 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-30 16:57:53.177  INFO [eureka-client,,,] 3960 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-10-30 16:57:54.297  INFO [eureka-client,,,] 3960 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2020-10-30 16:57:54.384  WARN [eureka-client,,,] 3960 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-10-30 16:57:55.643  INFO [eureka-client,,,] 3960 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-10-30 16:57:55.826  INFO [eureka-client,,,] 3960 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-30 16:57:55.885  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-30 16:57:55.968  INFO [eureka-client,,,] 3960 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-30 16:57:55.969  INFO [eureka-client,,,] 3960 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-30 16:57:56.178  INFO [eureka-client,,,] 3960 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-30 16:57:56.179  INFO [eureka-client,,,] 3960 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-30 16:57:56.454  INFO [eureka-client,,,] 3960 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 16:57:56.945  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-30 16:57:56.945  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-30 16:57:56.945  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-30 16:57:56.945  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-30 16:57:56.945  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-30 16:57:56.946  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-30 16:57:56.946  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-30 16:57:57.579  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-30 16:57:57.583  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-30 16:57:57.586  INFO [eureka-client,,,] 3960 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-30 16:57:57.591  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1604048277590 with initial instances count: 1
+2020-10-30 16:57:57.602  INFO [eureka-client,,,] 3960 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-CLIENT with eureka with status UP
+2020-10-30 16:57:57.602  INFO [eureka-client,,,] 3960 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1604048277602, current=UP, previous=STARTING]
+2020-10-30 16:57:57.605  INFO [eureka-client,,,] 3960 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT/LB-202007211142:eureka-client:8101: registering service...
+2020-10-30 16:57:57.637  INFO [eureka-client,,,] 3960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8101 (http) with context path ''
+2020-10-30 16:57:57.639  INFO [eureka-client,,,] 3960 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8101
+2020-10-30 16:57:57.646  INFO [eureka-client,,,] 3960 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT/LB-202007211142:eureka-client:8101 - registration status: 204
+2020-10-30 16:57:58.477  INFO [eureka-client,,,] 3960 --- [main] c.l.springcloud.EurekaClientApplication  : Started EurekaClientApplication in 15.374 seconds (JVM running for 16.914)
+2020-10-30 16:57:58.580  INFO [eureka-client,,,] 3960 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 3fa8f32dbf91
+2020-10-30 16:57:58.672  INFO [eureka-client,,,] 3960 --- [http-nio-8101-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-30 16:57:58.672  INFO [eureka-client,,,] 3960 --- [http-nio-8101-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-30 16:57:58.704  INFO [eureka-client,,,] 3960 --- [http-nio-8101-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2020-10-30 16:59:10.503  WARN [eureka-client,,,] 3960 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=eureka-client, managementUrl=http://LB-202007211142.mshome.net:8101/actuator, healthUrl=http://LB-202007211142.mshome.net:8101/actuator/health, serviceUrl=http://LB-202007211142.mshome.net:8101/) at spring-boot-admin ([http://localhost:9999/instances]): I/O error on POST request for "http://localhost:9999/instances": Connect to localhost:9999 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:9999 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect. Further attempts are logged on DEBUG level
+2020-10-30 17:02:56.948  INFO [eureka-client,,,] 3960 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:07:56.951  INFO [eureka-client,,,] 3960 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:08:40.504  WARN [eureka-client,,,] 3960 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=eureka-client, managementUrl=http://LB-202007211142.mshome.net:8101/actuator, healthUrl=http://LB-202007211142.mshome.net:8101/actuator/health, serviceUrl=http://LB-202007211142.mshome.net:8101/) at spring-boot-admin ([http://localhost:9999/instances]): I/O error on POST request for "http://localhost:9999/instances": Connect to localhost:9999 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:9999 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect. Further attempts are logged on DEBUG level
+2020-10-30 17:12:56.952  INFO [eureka-client,,,] 3960 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:14:12.823  INFO [eureka-client,,,] 40748 --- [main] c.l.springcloud.EurekaClientApplication  : The following profiles are active: replica1
+2020-10-30 17:14:13.895  WARN [eureka-client,,,] 40748 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-30 17:14:14.156  INFO [eureka-client,,,] 40748 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=473678c5-befd-386f-a795-d191803a131b
+2020-10-30 17:14:15.056  INFO [eureka-client,,,] 40748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8101 (http)
+2020-10-30 17:14:15.100  INFO [eureka-client,,,] 40748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-30 17:14:15.101  INFO [eureka-client,,,] 40748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-30 17:14:15.419  INFO [eureka-client,,,] 40748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-30 17:14:15.420  INFO [eureka-client,,,] 40748 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2575 ms
+2020-10-30 17:14:15.575  WARN [eureka-client,,,] 40748 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 17:14:15.576  INFO [eureka-client,,,] 40748 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 17:14:15.587  INFO [eureka-client,,,] 40748 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@da4cf09
+2020-10-30 17:14:16.518  WARN [eureka-client,,,] 40748 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-10-30 17:14:16.739  INFO [eureka-client,,,] 40748 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-30 17:14:16.888  INFO [eureka-client,,,] 40748 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-30 17:14:18.109  INFO [eureka-client,,,] 40748 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-10-30 17:14:18.639  WARN [eureka-client,,,] 40748 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-30 17:14:18.639  INFO [eureka-client,,,] 40748 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-30 17:14:18.939  INFO [eureka-client,,,] 40748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-30 17:14:20.513  INFO [eureka-client,,,] 40748 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2020-10-30 17:14:20.680  WARN [eureka-client,,,] 40748 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-10-30 17:14:21.718  INFO [eureka-client,,,] 40748 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-10-30 17:14:21.876  INFO [eureka-client,,,] 40748 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-30 17:14:21.916  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-30 17:14:22.657  INFO [eureka-client,,,] 40748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-30 17:14:22.658  INFO [eureka-client,,,] 40748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-30 17:14:22.896  INFO [eureka-client,,,] 40748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-30 17:14:22.897  INFO [eureka-client,,,] 40748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-30 17:14:23.306  INFO [eureka-client,,,] 40748 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:14:24.040  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-30 17:14:24.083  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-30 17:14:24.085  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-30 17:14:24.085  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-30 17:14:24.087  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-30 17:14:24.087  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-30 17:14:24.088  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-30 17:14:24.624  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-30 17:14:24.629  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-30 17:14:24.635  INFO [eureka-client,,,] 40748 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-30 17:14:24.645  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1604049264641 with initial instances count: 2
+2020-10-30 17:14:24.661  INFO [eureka-client,,,] 40748 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-CLIENT with eureka with status UP
+2020-10-30 17:14:24.662  INFO [eureka-client,,,] 40748 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1604049264662, current=UP, previous=STARTING]
+2020-10-30 17:14:24.667  INFO [eureka-client,,,] 40748 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT/LB-202007211142:eureka-client:8101: registering service...
+2020-10-30 17:14:25.348  INFO [eureka-client,,,] 40748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8101 (http) with context path ''
+2020-10-30 17:14:25.349  INFO [eureka-client,,,] 40748 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8101
+2020-10-30 17:14:25.353  INFO [eureka-client,,,] 40748 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT/LB-202007211142:eureka-client:8101 - registration status: 204
+2020-10-30 17:14:27.008  INFO [eureka-client,,,] 40748 --- [main] c.l.springcloud.EurekaClientApplication  : Started EurekaClientApplication in 17.327 seconds (JVM running for 18.935)
+2020-10-30 17:14:27.240  INFO [eureka-client,,,] 40748 --- [RMI TCP Connection(3)-172.18.60.17] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-30 17:14:27.241  INFO [eureka-client,,,] 40748 --- [RMI TCP Connection(3)-172.18.60.17] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-30 17:14:27.269  INFO [eureka-client,,,] 40748 --- [RMI TCP Connection(3)-172.18.60.17] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2020-10-30 17:19:24.095  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:24:24.097  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:29:24.100  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:34:24.104  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:39:24.107  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:44:24.112  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:49:24.114  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:54:24.116  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 17:59:24.119  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 18:04:24.122  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-30 18:09:24.124  INFO [eureka-client,,,] 40748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
